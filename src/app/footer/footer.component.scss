@@ -1,0 +1,54 @@
+@import "../SharedStyle.Scss";
+footer {
+  height: 358px;
+  width: 100%;
+  background-color: $nav-color;
+  color: $White;
+  text-align: center;
+ 
+  p:first-child{
+      font-family: $Righteous;
+      font-size: 30px;
+      color: $main-color;
+  }
+  .l-footer {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 2px $main-color;
+    cursor: pointer;
+    &:hover {
+      background-color: $main-color;
+      border-color: $main-color;
+      color: $nav-color;
+      transition-duration: 1s;
+    }
+    .fa-facebook,
+    .fa-twitter,
+    .fa-linkedin-in,
+    .fa-youtube,
+    .fa-google-plus
+    {
+      padding-top: 9px;
+      font-size: 25px;
+    }
+  }
+
+  .detail{
+      li{
+          display: inline-block;
+          font-family: $Tilte-font;
+          font-size: 25px;
+          cursor: pointer;
+          &:hover{
+            color: $main-color;
+            transition-duration: 1s;
+          }
+      }
+  }
+  .hrl {
+    border-top: 1px solid $main-color;
+    width: 100%;
+  }
+}
