@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-add-service1',
   templateUrl: './add-service1.component.html',
@@ -8,8 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class AddService1Component implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit() {
+    
   }
 
 }
