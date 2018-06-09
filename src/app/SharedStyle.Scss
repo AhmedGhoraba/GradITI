@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Lobster+Two|Righteous');
 
+//fonts
 $Tilte-font: 'Lobster Two', cursive;
 $Righteous: 'Righteous', cursive;
 $Sec-font: 'Alegreya Sans SC', sans-serif;
+
+//colors
+$main-color:#fbca03;
+$border-color:#acacac;
+
+
+%HeaderBefore {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.722;
+    box-shadow: 0px 5px 36.26px 12.74px rgba(96, 94, 94, 0.24);
+    height: 294px;
+    z-index: 11;
+  }
+  
