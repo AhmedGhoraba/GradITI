@@ -1,0 +1,85 @@
+@import "../SharedStyle.Scss";
+
+header
+{
+    
+    font-family: $Sec-font;
+    font-weight: bolder;
+    nav
+    {
+        @extend %HeaderBefore;
+        .navbar-brand
+        {
+            img
+            {
+                width: 95px;
+            }
+        }
+
+        .nav-item
+        {
+            .ico
+            {
+                img
+                {
+                    width: 25px;
+                }
+            }
+            a
+            {
+               .numCoin
+               {
+                   width: 100px;
+                 border-left: 1px solid $main-color;
+                 border-right:  1px solid $main-color;
+                 color: $main-color;
+
+                 img{
+                     width: 40px;
+                 }
+               }
+            }
+
+            .nav-link
+            {
+                color: $White;
+                &:hover{color: $main-color;}
+            }
+
+        }
+        .dropdown
+        {
+            img
+            {
+                width: 45px;
+            }
+        
+            .dropdown-menu
+            {
+                background-color: $nav-color;
+                border-top:2px solid $main-color;
+                
+                .dropdown-item
+                {
+                    background-color: $nav-color;
+                    color: $main-color;
+                    &:active , &:hover
+                    {
+                        background-color:$main-color;
+                        color:$nav-color;
+                    }
+                }
+                .dropdown-divider
+                {
+                    border-color: $main-color;  
+                }
+            }
+        }
+           
+
+        form{
+            @extend %form;
+            
+            }
+    }
+}

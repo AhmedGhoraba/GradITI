@@ -31,3 +31,35 @@ $nav-color:#404951;
   {
       color:#acacac;
   }
+
+  %form{
+    .form-control
+    {
+        width: 300px;
+        border-color:$main-color; 
+        background-color: transparent;
+        &:focus
+        { 
+            color: $main-color;
+            border-color: $main-color;
+            box-shadow: 0 0 0.4rem $main-color;
+        }
+    }
+
+    .searchIco
+    {
+        background-image: url(../../assets/Icon/searchIcon.png);
+        background-color:$nav-color;
+        border: none;
+        background-size: cover;
+        z-index: 13;
+        right: 11px;
+        width: 25px;
+        height: 25px;
+        &:focus
+        {
+            box-shadow:none;
+        }
+    }
+    
+}
