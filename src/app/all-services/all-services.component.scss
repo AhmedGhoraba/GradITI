@@ -1,0 +1,19 @@
+@import '../SharedStyle';
+
+.card-title{
+    font-family: $Righteous;
+}
+
+.service-details{
+    font-family: $Sec-font;
+}
+.card img:nth-child(2){
+    top:95px;
+    left:10px;
+}
+
+h6 + img {
+    width: 6%;
+    height: 6%;
+}
+
