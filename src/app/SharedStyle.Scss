@@ -7,14 +7,27 @@ $Sec-font: 'Alegreya Sans SC', sans-serif;
 
 //colors
 $main-color:#fbca03;
+$White:#ffffff;
 $border-color:#acacac;
-
+$btn-hover-color:#363636;
+$nav-color:#404951;
 
 %HeaderBefore {
-    background-color: rgb(255, 255, 255);
+    background-color:$nav-color;
     opacity: 0.722;
     box-shadow: 0px 5px 36.26px 12.74px rgba(96, 94, 94, 0.24);
-    height: 294px;
+    height: 130px;
     z-index: 11;
   }
   
+  %btn-hover
+  {
+    background-color:$btn-hover-color;
+    color: $main-color;
+    transition-duration: 1s;
+  }
+
+  ::placeholder 
+  {
+      color:#acacac;
+  }

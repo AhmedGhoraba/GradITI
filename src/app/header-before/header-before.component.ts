@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-header-before',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderBeforeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(){
+  }
   ngOnInit() {
+    $(".signUpBtn").on('mouseover', function(event){
+      event.stopPropagation();
+      $(this).addClass('animated pulse');
+  });
+  $(".signUpBtn").on('mouseout', function(event){
+      event.stopPropagation();
+      $(this).removeClass('animated pulse');
+  });
   }
 
 }
