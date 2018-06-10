@@ -16,7 +16,6 @@ $nav-color:#404951;
     background-color:$nav-color;
     opacity: 0.722;
     box-shadow: 0px 5px 36.26px 12.74px rgba(96, 94, 94, 0.24);
-    height: 130px;
     z-index: 11;
   }
   
@@ -63,3 +62,20 @@ $nav-color:#404951;
     }
     
 }
+
+%navbar-toggler
+        {
+         border: 1px solid $main-color;
+         background-color: transparent;
+         &:hover
+         {
+            background-color:$main-color;
+         } 
+        i{
+            color:$main-color;
+            &:hover
+            {
+                color:$nav-color;
+            }
+        }
+        }
