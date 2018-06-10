@@ -12,8 +12,13 @@ header
         {
             img
             {
-                width: 95px;
+                width: 75px;
             }
+        }
+
+        .navbar-toggler
+        {
+          @extend %navbar-toggler;
         }
 
         .nav-item
@@ -29,8 +34,7 @@ header
         }
 
         form{
-            @extend %form;
-            
+            @extend %form;            
         }
     }
 

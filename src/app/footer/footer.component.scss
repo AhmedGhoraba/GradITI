@@ -1,6 +1,6 @@
 @import "../SharedStyle.Scss";
 footer {
-  height: 358px;
+  height: auto;
   width: 100%;
   background-color: $nav-color;
   color: $White;
@@ -27,7 +27,6 @@ footer {
     .fa-facebook,
     .fa-twitter,
     .fa-linkedin-in,
-    .fa-youtube,
     .fa-google-plus
     {
       padding-top: 9px;
@@ -35,7 +34,8 @@ footer {
     }
   }
 
-  .detail{
+  ul{padding: 0;}
+  .detail{    
       li{
           display: inline-block;
           font-family: $Tilte-font;
