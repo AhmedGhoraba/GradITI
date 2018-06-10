@@ -10,3 +10,11 @@ hr{
     border: 0;
     border-top: 2px solid $main-color;
 }
+
+
+.card{
+    height: 100%;
+    border: 1.5px dashed $main-color;
+    color: $main-color;
+    font-family: $Righteous;
+}
