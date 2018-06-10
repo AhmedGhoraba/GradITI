@@ -1,0 +1,50 @@
+@import '../SharedStyle';
+
+#sec1
+{
+    margin-top: 138px;
+}
+.title{
+    font-family: $Tilte-font;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid $main-color;
+}
+
+button{
+    @extend %btn-normal
+}
+
+i{
+    color: $main-color;
+}
+
+h5{
+    font-family: $Righteous;
+}
+
+span{
+    font-family: $Sec-font;
+    font-size: 1.25rem;
+}
+
+div > i{
+    font-size: 2rem
+}
+
+.overlay{
+    display: none;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    background-color: rgba($color: #000000, $alpha: 0.5)
+}
+
+.media:hover .overlay{
+    display: flex;
+}
