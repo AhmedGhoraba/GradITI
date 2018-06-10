@@ -10,6 +10,15 @@ export class HomeBeforLogInComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
+    $(".btnJoin").on('mouseover', function(event){
+      event.stopPropagation();
+      $(this).addClass('animated rubberBand');
+  });
+  $(".btnJoin").on('mouseout', function(event){
+      event.stopPropagation();
+      $(this).removeClass('animated rubberBand');
+  });
   }
 
 }

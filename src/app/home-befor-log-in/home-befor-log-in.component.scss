@@ -1,5 +1,92 @@
-// main{
-//     background-image: url("../../assets/Img/bg.png");
-//     background-size:100% 100%;
-//     height: 100vh;
-// }
+@import "../SharedStyle.Scss";
+main {
+  #Sec1 {
+    background-image: url("../../assets/Img/b.png");
+    background-size: cover;
+    height: 100vh;
+    .bef-aft {
+      position: relative;
+      font-family: $Tilte-font;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        top: 53%;
+        left: -45px;
+        border-top: 1px solid $nav-color;
+      }
+      &:after {
+        left: 100%;
+      }
+    }
+    .btn {
+      background-color: $main-color;
+      height: 50px;
+      font-size: 25px;
+      &:hover {
+        color: $main-color;
+        background-color: $btn-hover-color;
+      }
+    }
+  }
+  #Sec2 {
+    height: auto;
+    h2 {
+      @extend %title-lineCenter;
+    }
+    .outerB {
+      border: 1px solid $border-color;
+      &:hover {
+        background-color: $nav-color;
+        color: $main-color;
+        transition-duration: 1s;
+        .line {
+          background-color: $main-color;
+        }
+      }
+      img {
+        width: 100px;
+      }
+      .img1 {
+        height: 85px;
+        width: 109px;
+      }
+      .img7 {
+        height: 95px;
+      }
+      .line {
+        width: 106px;
+        background-color: $nav-color;
+        height: 2px;
+      }
+      h5 {
+        font-family: $Righteous;
+      }
+    }
+  }
+  #Sec3 {
+    height: auto;
+    h2 {
+      @extend %title-lineCenter;
+    }
+    .card {
+      .card-img-top {
+        border: 6px solid $main-color;
+      }
+        .card-title {
+          font-family: $Righteous;
+        }
+        .service-details {
+          font-family: $Sec-font;
+          font-weight: 700;
+        }
+      
+      h5 + img {
+        width: 5%;
+        height: 5%;
+      }
+    
+    }
+  }
+}
