@@ -14,6 +14,17 @@ $nav-color:#404951;
 $face-color:#3b5998;
 $Linked-color:#007bb6;
 
+
+//toggel style
+
+$open-sans: 'Open Sans', 'Helvetica', sans-serif;
+$darkNavy: #213140;
+$teal1: #66B3FB;
+$teal2: #4B9DEA;
+$charcoal: #555555;
+$gold: #B6985A;
+$activeShadow: 0 0 10px rgba($teal1, .5);
+
 %HeaderBefore {
     background-color:$nav-color;
     // opacity: 0.722;
