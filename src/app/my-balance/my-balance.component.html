@@ -1,3 +1,77 @@
-<p>
-  my-balance works!
-</p>
+<app-header-after></app-header-after>
+<main>
+    <div class="hint mt-5 pt-5 p-3">
+      <span class="alert-close float-right ml-auto mt-5">X</span>
+      <div class="container mt-5">
+        <div class="row mt-5">
+
+          <p>Earn points by recruiting friends invite friends and get 25
+            <img src="../../assets/Icon/P.png" /> when the join and 25
+            <img src="../../assets/Icon/P.png" />
+          </p>
+          <p class="d-inline">when they make their first deal!</p>
+          <button class="btn ml-auto sharebtn">Share it now</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-5 pt-5">
+        <div class="col-md-5 mt-5">
+          <app-prof-user-data></app-prof-user-data>
+        </div>
+
+        <div class="col-md-7 mt-5">
+          <!-- balance -->
+          <div class="card my-3">
+            <div class="card-body">
+              <div class="row container mb-2">
+                <h5>Current Balance</h5>
+                <h6 class="ml-auto">25</h6>
+              </div>
+              <div class="row container mb-2">
+                <h5>On Hold
+                  <i class="fa fa-info-circle"></i>
+                </h5>
+                <h6 class="ml-auto">0</h6>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent">
+              <div class="row container">
+                <h5>Available Balance</h5>
+                <h6 class="ml-auto">25</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- transaction -->
+          <div class="container">
+            <h4>Transaction History</h4>
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Balance</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>jun 02/2018</td>
+                    <td>Awarded for joining us</td>
+                    <td>+25</td>
+                    <td>25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+</main>

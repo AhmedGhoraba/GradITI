@@ -1,0 +1,51 @@
+@import '../SharedStyle.scss';
+main {
+  .hint {
+    height: auto;
+    background-color: $main-color;
+    margin-top: 100px;
+    img {
+      width: 5%;
+    }
+    p {
+      font-size: 27px;
+      font-family: $Tilte-font;
+    }
+    .btn {
+      @extend %btn-hover;
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      margin-left: 54%;
+    }
+    .alert-close {
+      display: inline-block;
+      cursor: pointer;
+      padding: 2px 5px;
+      &:hover {
+        background-color: $nav-color;
+        color: $main-color;
+      }
+    }
+  }
+  .card {
+    i {
+      color: $main-color;
+    }
+    .card-footer {
+      font-family: $Righteous;
+    }
+  }
+
+  .table
+  {
+      thead
+      {
+          border-bottom: 1px solid $border-color;
+      }
+      tbody
+      {
+          background-color: $border-color;
+      }
+  }
+}
