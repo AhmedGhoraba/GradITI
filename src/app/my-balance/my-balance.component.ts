@@ -10,6 +10,18 @@ export class MyBalanceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(".sharebtn").on('mouseover', function(event){
+      event.stopPropagation();
+      $(this).addClass('animated swing');
+  });
+  $(".sharebtn").on('mouseout', function(event){
+      event.stopPropagation();
+      $(this).removeClass('animated swing');
+  });
+  $('.alert-close').on('click', function(c){
+    $(this).parent().fadeOut('slow');
+  });
   }
+
 
 }

@@ -10,6 +10,9 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      $('.alert-close').on('click', function(c){
+        $(this).parent().fadeOut('slow');
+      });
   }
 
 }

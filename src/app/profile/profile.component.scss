@@ -1,0 +1,118 @@
+@import '../SharedStyle.scss';
+@import '../all-services/all-services.component.scss';
+
+.leftpart
+{
+  .card {
+    .card-title {
+      @extend %title-lineCenter;
+      &:after {
+        top: 36px;
+        left: 0;
+      }
+    }
+    .card-text {
+      font-size: 14px;
+    }
+    .linkI {
+      i {
+        font-size: 21px;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+    .skill {
+      background-color: $main-color;
+      font-family: $Righteous;
+      display: inline-block;
+      &:hover {
+        @extend %btn-hover;
+        cursor: pointer;
+      }
+      .alert-close {
+        display: inline-block;
+        padding: 2px 5px;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+.rightPart
+{
+  .nav-tabs {
+    border-bottom: 1px solid $main-color;
+  }
+  
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:focus,
+  .nav-tabs>li.active>a:hover {
+    color: $main-color;
+  }
+  
+  .nav-tabs>li>a {
+    color: $nav-color;
+    font-family: $Righteous;
+  }
+  
+  .nav-tabs>li.active>a,
+  .nav-tabs>li>a:hover {
+    color: $main-color !important;
+  }
+
+  .card
+  {
+    .card-title
+    {
+      font-size: 16px;
+    }
+  }
+
+  .bordAddBtn
+  {
+    border: dashed 2px $border-color;
+    height: 196px;
+    i{
+      color:  $border-color;
+      font-size: 41px;
+    }
+    p{
+      font-size: 16px;
+      font-family: $Righteous;
+      color: $border-color;
+    }
+    &:hover
+    {
+      background-color: $nav-color;
+      transition-duration: 1s;
+      i , p {
+        color: $main-color;
+        cursor: pointer;
+      }     
+    }
+  }
+  
+  .review
+  {
+    h5{
+      font-size: 20px;
+      margin-left: 7px;
+    }
+    i {
+      color: $main-color;
+    }
+  }
+  .req
+  {
+    height: 267px;
+  }
+
+  hr{
+    color: $border-color;
+  }
+}
+
+

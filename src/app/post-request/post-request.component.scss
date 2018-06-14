@@ -15,17 +15,6 @@ hr{
     border-top: 2px solid $main-color;
 }
 
-//toggel style
-
-$open-sans: 'Open Sans', 'Helvetica', sans-serif;
-
-$darkNavy: #213140;
-$teal1: #66B3FB;
-$teal2: #4B9DEA;
-$charcoal: #555555;
-$gold: #B6985A;
-
-$activeShadow: 0 0 10px rgba($teal1, .5);
 
 /* MIXINS */
 @mixin focusOutline {outline: dotted 1px #CCC; outline-offset: .45rem;}

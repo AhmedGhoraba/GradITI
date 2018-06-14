@@ -1,0 +1,58 @@
+@import '../SharedStyle.scss';
+@import '../top-users/top-users.component.scss';
+@import '../post-request/post-request.component.scss';
+.card {
+  .on-off {
+    border: 1px solid $border-color;
+    width: 95px;
+    img {
+      width: 27px;
+      border: none;
+    }
+  }
+  .card-body {
+    .Bio {
+      font-size: 13px;
+    }
+    ul {
+      display: inline-block;
+      li {
+        list-style: none;
+        font-size: 14px;
+      }
+    }
+  }
+  .toggle {
+    input+label {
+      padding: 0;
+    }
+    input:checked+label {
+      background-color: $nav-color;
+      border-color: $border-color;
+      box-shadow: none;
+    }
+    img {
+      width: 27px;
+      border: none;
+    }
+  }
+
+  .list-group{
+      padding: 0;
+      display: inline-block;
+      
+      li{
+        display: inline-block;
+        list-style: none;
+
+        &:first-child
+        {
+            margin-left: -85px;
+        }
+        &:nth-child(2)
+        {
+            margin-left: 25px;
+        }
+    }
+  }
+}
