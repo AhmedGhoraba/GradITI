@@ -9,8 +9,6 @@ export class AllServicesComponent implements OnInit {
 
   constructor() { }
 
-
-
   ngOnInit() {
   }
 

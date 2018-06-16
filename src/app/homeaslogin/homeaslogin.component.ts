@@ -16,6 +16,16 @@ export class HomeasloginComponent implements OnInit {
   this.OurRoute.navigateByUrl('/ServiceDetails');
 }
 
+redirectToAllServs():void
+{
+  this.OurRoute.navigateByUrl('/AllServices');
+}
+
+redirectToAllReqs():void
+{
+  this.OurRoute.navigateByUrl('/AllRequests');
+}
+
   ngOnInit() {
   }
 
