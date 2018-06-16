@@ -1,4 +1,4 @@
-@import '../SharedStyle';
+@import '../SharedStyle.scss';
 
 //style nav
 
@@ -51,9 +51,9 @@ label > img {
     height: 10%;
 }
 
-.text-right button{
-    @extend %btn-normal;
-}
+// .text-right button{
+//     @extend %btn-normal;
+// }
 
 div > p{
     font-family: $Righteous;
