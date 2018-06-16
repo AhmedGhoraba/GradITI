@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-one-service',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OneServiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private OurRoute:Router) { }
 
+  //function to redirect links(route)
+  redirectToServDetails():void
+{
+  this.OurRoute.navigateByUrl('/ServiceDetails');
+}
   ngOnInit() {
   }
 
 }
+
+

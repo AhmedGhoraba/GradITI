@@ -1,3 +1,121 @@
-<p>
-  add-service1 works!
-</p>
+<!-- nav -->
+<app-header-after></app-header-after>
+
+<section id="sec1" class="container py-5">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-between">
+      <h3 class="m-0 title">Add New Service</h3>
+    </div>
+    <div class="container w-100 py-2">
+        <hr width="50" align="left">
+        <p class="subtitle">Follow steps below to add new one</p>
+    </div>
+    
+    <div class="container">
+
+      <div class="row">
+        <div class="col-3 pr-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Overview</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">1</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <div class="col-3 pr-0 pl-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Description</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">2</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <div class="col-3 pr-0 pl-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Gallery</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">3</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <div class="col-3 pl-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Publish</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">4</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+    </div>
+  </section>
+
+<!-- ------------------------- -->
+
+<div class="container pb-5">
+  <div class="row">
+
+    <!-- form -->
+    <form class="col-lg-12 ">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Give your service a name*</label>
+          <input type="text" class="form-control " id="formGroupExampleInput" placeholder="E.g. 30-Minute SEO Consult, Virtual Tarot Reading">
+          <span class="text-muted">Fully describe your post in the title. Limit it to one, single post. (0/35 max)</span>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-6">
+                <p> Choose Category*</p>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        E.g. Accountant and Consultant
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-6">
+                <p>Sub Category*</p>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        E.g. Accountant and Consultant
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+            </div>
+          
+        <div class="form-group ">
+            <label for="formGroupExampleInput2"> Search Tags</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group ">
+            <label for="formGroupExampleInput3"><img src="../../assets/Img/P.png" alt="">Set Price*</label>
+            <div class="d-flex"><input type="number" class="form-control w-25 mr-3"><img src="../../assets/Img/P.png" alt=""></div>
+        </div>
+
+        <div class="text-right">
+          <button class="btn mr-3 p-3  bg-light">Cancel</button>
+          <button class="btn p-3">Save&Continue</button>
+        </div>
+    </form>
+</div>
+  </div>
+
+

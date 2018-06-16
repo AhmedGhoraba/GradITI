@@ -18,11 +18,12 @@ hr{
 .part p{
     width: 30px;
     height: 30px;
-    background-color: $main-color;
+    background-color: $border-color;
 }
 
 .multistep hr{
     width: 100%;
+    border-top: 2px solid $border-color
 }
 
 .multistep p:first-child{
