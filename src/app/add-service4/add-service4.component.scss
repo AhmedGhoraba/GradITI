@@ -53,5 +53,9 @@ hr{
 
 // --------------------------------------------------------------
 button{
-    @extend   %btn-normal;
+    @extend %btn-normal;
+    &:hover
+    {
+        @extend  %btn-hover;
+    }
 }
