@@ -22,7 +22,6 @@ import { AddService1Component } from './add-service1/add-service1.component';
 import { AddService2Component } from './add-service2/add-service2.component';
 import { AddService3Component } from './add-service3/add-service3.component';
 import { AddService4Component } from './add-service4/add-service4.component';
-import { AddSerNavComponent } from './add-ser-nav/add-ser-nav.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
 import { AllServicesComponent } from './all-services/all-services.component';
 import { AllRequestsComponent } from './all-requests/all-requests.component';
@@ -83,7 +82,6 @@ const OurRoutes:Routes = [
     AddService2Component,
     AddService3Component,
     AddService4Component,
-    AddSerNavComponent,
     ServiceDetailsComponent,
     AllServicesComponent,
     AllRequestsComponent,
