@@ -28,7 +28,6 @@ import { AllRequestsComponent } from './all-requests/all-requests.component';
 import { TopUsersComponent } from './top-users/top-users.component';
 import { MyservicesComponent } from './myservices/myservices.component';
 import { HomeasloginComponent } from './homeaslogin/homeaslogin.component';
-import { AddNewSerComponent } from './add-new-ser/add-new-ser.component';
 import { PostRequestComponent } from './post-request/post-request.component';
 
 //services
@@ -57,7 +56,6 @@ import { PostRequestComponent } from './post-request/post-request.component';
     TopUsersComponent,
     MyservicesComponent,
     HomeasloginComponent,
-    AddNewSerComponent,
     PostRequestComponent
     
   ],
