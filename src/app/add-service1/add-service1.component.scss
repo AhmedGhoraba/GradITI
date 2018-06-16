@@ -51,9 +51,7 @@ label > img {
     height: 10%;
 }
 
-// .text-right button{
-//     @extend %btn-normal;
-// }
+
 
 div > p{
     font-family: $Righteous;
@@ -68,10 +66,16 @@ div > p{
     border-top: 2px solid $main-color ;
 }
 
-
-button:hover{
-    @extend %btn-hover;
+.navigatebtn
+{
+    .btn{
+        @extend %btn-normal;
+        &:hover{
+            @extend %btn-hover;
+        }
+    }
 }
+
 
 
 
