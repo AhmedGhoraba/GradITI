@@ -1,8 +1,8 @@
 <header>
   <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand animated flip" href="#">
-        <img src="assets/logo-8.png" />
+      <a class="navbar-brand animated flip" (click)="redirectToHome()">
+        <img src="assets/logo-8.png"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -19,13 +19,13 @@
         <ul class="navbar-nav ml-auto">
           <div class="row d-flex justify-content-center">            
             <li class="nav-item p-2">
-              <a class="nav-link" href="#">How It work!</a>
+              <a class="nav-link" (click)="redirectToHowItWork()">How It work!</a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link" href="#">LOGIN</a>
+              <a class="nav-link" (click)="redirectToSignIn()">LOGIN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" (click)="redirectToSignUp()">
                 <button class="btn signUpBtn">SIGNUP</button>
               </a>
             </li>

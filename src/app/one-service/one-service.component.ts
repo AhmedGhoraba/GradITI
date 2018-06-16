@@ -1,22 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-homeaslogin',
-  templateUrl: './homeaslogin.component.html',
-  styleUrls: ['./homeaslogin.component.scss']
+  selector: 'app-one-service',
+  templateUrl: './one-service.component.html',
+  styleUrls: ['./one-service.component.scss']
 })
-export class HomeasloginComponent implements OnInit {
+export class OneServiceComponent implements OnInit {
 
   constructor(private OurRoute:Router) { }
 
-//function to redirect links(route)
+  //function to redirect links(route)
   redirectToServDetails():void
 {
   this.OurRoute.navigateByUrl('/ServiceDetails');
 }
-
   ngOnInit() {
   }
 
 }
+
+

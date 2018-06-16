@@ -129,6 +129,7 @@ main {
     .card {
       .card-img-top {
         border: 6px solid $main-color;
+        cursor: pointer;
       }
         .card-title {
           font-family: $Righteous;

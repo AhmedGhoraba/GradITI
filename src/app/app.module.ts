@@ -1,7 +1,8 @@
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; //ng bootstrap
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap'; //ng bootstrap
+import { RouterModule, Routes } from '@angular/router'; //for routing navigation
 
 //huda components
 import { AppComponent } from './app.component';
@@ -30,7 +31,40 @@ import { MyservicesComponent } from './myservices/myservices.component';
 import { HomeasloginComponent } from './homeaslogin/homeaslogin.component';
 import { PostRequestComponent } from './post-request/post-request.component';
 
+//latest components
+import { MessageComponent } from './message/message.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { MyRequestsComponent } from './my-requests/my-requests.component';
+import { OneRequestComponent } from './one-request/one-request.component';
+import { OneServiceComponent } from './one-service/one-service.component';
+import { HowItWorkComponent } from './how-it-work/how-it-work.component';
+import { SettingComponent } from './setting/setting.component';
+
 //services
+
+const OurRoutes:Routes = [
+{path:'' , component: HomeasloginComponent},
+{path:'SignIn' , component: SignInComponent },
+{path:'SignUp' , component: SignUpComponent},
+{path:'HomeBeforLogIn' , component: HomeBeforLogInComponent},
+{path:'Profile' , component: ProfileComponent},
+{path:'Myservices' , component: MyservicesComponent},
+{path:'PostRequest' , component: PostRequestComponent},
+{path:'MyBalance' , component: MyBalanceComponent},
+{path:'ServiceDetails' , component: ServiceDetailsComponent},
+{path:'AddServiceStep1' , component: AddService1Component},
+{path:'AddServiceStep2' , component: AddService2Component},
+{path:'AddServiceStep3' , component: AddService3Component},
+{path:'AddServiceStep4' , component: AddService4Component},
+{path:'PostRequest' , component: PostRequestComponent},
+{path:'Chat' , component: MessageComponent},
+{path:'Notifications' , component: NotificationsComponent},
+{path:'MyRequests' , component: MyRequestsComponent},
+{path:'AllServices' , component: AllServicesComponent},
+{path:'AllRequests' , component: AllRequestsComponent},
+{path:'HowItWork' , component: HowItWorkComponent},
+{path:'Settings' , component: SettingComponent}
+];
 
 @NgModule({
   declarations: [
@@ -56,12 +90,22 @@ import { PostRequestComponent } from './post-request/post-request.component';
     TopUsersComponent,
     MyservicesComponent,
     HomeasloginComponent,
-    PostRequestComponent
+    PostRequestComponent,
+    MessageComponent,
+    NotificationsComponent,
+    MyRequestsComponent,
+    OneRequestComponent,
+    OneServiceComponent,
+    HowItWorkComponent,
+    SettingComponent
     
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    RouterModule.forRoot(OurRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,27 @@
+@import '../SharedStyle';
+
+.card{
+    border: 1px solid $main-color;
+}
+.card-header{
+    font-family: $Sec-font;
+}
+
+.card-title{
+    font-family: $Righteous;
+    font-size: 1rem;
+}
+
+h6{
+    font-family: $Sec-font;
+}
+
+.card .rounded-circle{
+    width: 20%;
+    height: 20%;
+}
+
+h6 + img {
+    width: 6%;
+    height: 6%;
+}
