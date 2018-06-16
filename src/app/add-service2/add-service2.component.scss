@@ -43,12 +43,20 @@ hr{
     background-color: $main-color ;
 }
 
+.row .col-3:first-of-type  .multistep p{
+    color: $main-color ;
+}
+
 .row .col-3:first-of-type  .multistep hr{
     border-top: 2px solid $main-color ;
 }
 
 .row .col-3:nth-of-type(2)  .multistep .part p{
     background-color: $main-color ;
+}
+
+.row .col-3:nth-of-type(2)  .multistep  p{
+    color: $main-color ;
 }
 
 .row .col-3:nth-of-type(2)  .multistep hr{
