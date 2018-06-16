@@ -17,6 +17,11 @@ export class MyservicesComponent implements OnInit {
   this.OurRoute.navigateByUrl('/AddServiceStep1');
 }
 
+redirectToServDetail():void
+{
+  this.OurRoute.navigateByUrl('/ServiceDetails');
+}
+
   ngOnInit() {
   }
 
