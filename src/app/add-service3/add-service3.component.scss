@@ -96,6 +96,12 @@ label {
     font-size: 1.25rem
 }
 
-.text-right button{
-    @extend %btn-normal
+.navigatebtn
+{
+    .btn{
+        @extend %btn-normal;
+        &:hover{
+            @extend %btn-hover;
+        }
+    }
 }

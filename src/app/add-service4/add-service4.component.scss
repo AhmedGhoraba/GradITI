@@ -52,6 +52,12 @@ hr{
 }
 
 // --------------------------------------------------------------
-button{
-    @extend   %btn-normal;
+.navigatebtn
+{
+    .btn{
+        @extend %btn-normal;
+        &:hover{
+            @extend %btn-hover;
+        }
+    }
 }

@@ -13,7 +13,7 @@ export class AddService3Component implements OnInit {
   //function to redirect links(route)
   redirectToAddServs():void
   {
-    this.OurRoute.navigateByUrl('/AddServiceStep3');
+    this.OurRoute.navigateByUrl('/AddServiceStep4');
   }
   
   redirectToHome():void
