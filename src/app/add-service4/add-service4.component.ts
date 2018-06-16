@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-service4',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddService4Component implements OnInit {
 
-  constructor() { }
+  constructor(private OurRoute:Router) { }
+
+
+  //function to redirect links(route)
+  redirectToMyServs():void
+  {
+    this.OurRoute.navigateByUrl('/Myservices');
+  }
+  
+  redirectToHome():void
+  {
+    this.OurRoute.navigateByUrl('');
+  }
 
   ngOnInit() {
   }

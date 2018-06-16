@@ -118,7 +118,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="card bordAddBtn text-center d-flex justify-content-center">
+                  <div class="card bordAddBtn text-center d-flex justify-content-center" (click)="redirectToAddServs()">
                     <i class="fa fa-plus-circle"></i>
                     <p>Add New Service</p>
                   </div>
@@ -152,10 +152,10 @@
               <br/>
               <div class="row mt-3">
                 <div class="col-md-6">
-                  <app-all-requests></app-all-requests>
+                  <app-one-request></app-one-request>
                 </div>
                 <div class="col-md-6">
-                  <div class="card bordAddBtn req text-center d-flex justify-content-center">
+                  <div class="card bordAddBtn req text-center d-flex justify-content-center" (click)="PostNewReq()">
                     <i class="fa fa-plus-circle"></i>
                     <p>Add New Request</p>
                   </div>
