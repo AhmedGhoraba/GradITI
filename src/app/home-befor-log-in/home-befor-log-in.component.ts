@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-befor-log-in',
@@ -7,10 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeBeforLogInComponent implements OnInit {
 
-  constructor() { }
+  constructor(private OurRoute:Router) { }
 
-  ngOnInit() {
-    
+//function to redirect links(route)
+redirectToAllServs():void
+{
+  this.OurRoute.navigateByUrl('/AllServices');
+}
+
+redirectToServDetails():void
+{
+  this.OurRoute.navigateByUrl('/ServiceDetails');
+}
+
+redirectToSignUp():void
+{
+  this.OurRoute.navigateByUrl('/SignUp');
+}
+
+  ngOnInit() {    
+
+    //animation
     $(".btnJoin").on('mouseover', function(event){
       event.stopPropagation();
       $(this).addClass('animated rubberBand');
@@ -19,6 +37,7 @@ export class HomeBeforLogInComponent implements OnInit {
       event.stopPropagation();
       $(this).removeClass('animated rubberBand');
   });
+  //end animation
   }
 
 }

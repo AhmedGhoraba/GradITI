@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homeaslogin',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeasloginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private OurRoute:Router) { }
+
+//function to redirect links(route)
+  redirectToServDetails():void
+{
+  this.OurRoute.navigateByUrl('/ServiceDetails');
+}
 
   ngOnInit() {
   }

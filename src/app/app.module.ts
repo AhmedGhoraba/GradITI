@@ -37,6 +37,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { MyRequestsComponent } from './my-requests/my-requests.component';
 import { OneRequestComponent } from './one-request/one-request.component';
 import { OneServiceComponent } from './one-service/one-service.component';
+import { HowItWorkComponent } from './how-it-work/how-it-work.component';
+import { SettingComponent } from './setting/setting.component';
 
 //services
 
@@ -59,7 +61,9 @@ const OurRoutes:Routes = [
 {path:'Notifications' , component: NotificationsComponent},
 {path:'MyRequests' , component: MyRequestsComponent},
 {path:'AllServices' , component: AllServicesComponent},
-{path:'AllRequests' , component: AllRequestsComponent}
+{path:'AllRequests' , component: AllRequestsComponent},
+{path:'HowItWork' , component: HowItWorkComponent},
+{path:'Settings' , component: SettingComponent}
 ];
 
 @NgModule({
@@ -86,7 +90,14 @@ const OurRoutes:Routes = [
     TopUsersComponent,
     MyservicesComponent,
     HomeasloginComponent,
-    PostRequestComponent
+    PostRequestComponent,
+    MessageComponent,
+    NotificationsComponent,
+    MyRequestsComponent,
+    OneRequestComponent,
+    OneServiceComponent,
+    HowItWorkComponent,
+    SettingComponent
     
   ],
   imports: [

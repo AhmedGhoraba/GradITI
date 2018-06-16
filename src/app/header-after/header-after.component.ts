@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as $ from "jquery";
 
 @Component({
@@ -8,9 +9,53 @@ import * as $ from "jquery";
 })
 export class HeaderAfterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private OurRoute:Router) { }
+
+   //function to redirect links(route)
+   redirectToHome():void
+   {
+     this.OurRoute.navigateByUrl('');
+   }
+
+   redirectToMsg():void
+   {
+     this.OurRoute.navigateByUrl('/Chat');
+   }
+
+   redirectToNotify():void
+   {
+     this.OurRoute.navigateByUrl('/Notifications');
+   }
+
+   redirectToMyBalance():void
+   {
+     this.OurRoute.navigateByUrl('/MyBalance');
+   }
+
+   redirectToProfile():void
+   {
+     this.OurRoute.navigateByUrl('/Profile');
+   }
+
+   redirectToMyServices():void
+   {
+     this.OurRoute.navigateByUrl('/Myservices');
+   }
+
+   redirectToMyReq():void
+   {
+     this.OurRoute.navigateByUrl('/MyRequests');
+   }
+
+   redirectToSetting():void
+   {
+     this.OurRoute.navigateByUrl('/Settings');
+   }
+
 
   ngOnInit() {
+
+     //for animation
     $(".notify").on('mouseover', function(event){
       event.stopPropagation();
       $(this).addClass('animated swing');
@@ -37,6 +82,8 @@ $(".numCoin img").on('mouseout', function(event){
   event.stopPropagation();
   $(this).removeClass('animated flip');
 });
+
+//end animation
   }
 
 }

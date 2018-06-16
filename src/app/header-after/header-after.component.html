@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand animated flip" href="#"><img src="assets/logo-8.png" /></a>
+      <a class="navbar-brand animated flip" (click)="redirectToHome()"><img src="assets/logo-8.png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-align-justify"></i>
       </button>
@@ -14,13 +14,13 @@
                   <button class="btn position-absolute searchIco"></button>
               </form>
           <li class="nav-item ml-5 my-3">
-            <a class="nav-link ico notify" href="#"><img src="assets/Icon/notification.png"/></a>
+            <a class="nav-link ico notify" (click)=" redirectToNotify()"><img src="assets/Icon/notification.png"/></a>
           </li>
           <li class="nav-item ml-4 my-3">
-            <a class="nav-link ico msg" href="#"><img src="assets/Icon/mail.png"/></a>
+            <a class="nav-link ico msg" (click)="redirectToMsg()"><img src="assets/Icon/mail.png"/></a>
           </li>
           <li class="nav-item ml-4 my-3">
-            <a class="nav-link" href="#">
+            <a class="nav-link" (click)="redirectToMyBalance()">
               <div class="numCoin text-center">
                 <span>25</span>
                 <img src="assets/Icon/point.png"/>
@@ -32,13 +32,13 @@
                <img src="assets/Img/ppic.jpg"  class="rounded-circle img-fluid mr-2"/><span>HuDa SaLaH</span>
               </a>
               <div class="dropdown-menu text-center mt-4" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item" (click)="redirectToProfile()">My Profile</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">My Services</a>
+                <a class="dropdown-item" (click)="redirectToMyServices()">My Services</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">My Requests</a>
+                <a class="dropdown-item" (click)="redirectToMyReq()">My Requests</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" (click)="redirectToSetting()">Setting</a>
               </div>
            </li>
 
