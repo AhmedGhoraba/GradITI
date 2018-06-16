@@ -1,3 +1,79 @@
-<p>
-  add-service3 works!
-</p>
+<!-- nav -->
+<app-header-after></app-header-after>
+
+<section id="sec1" class="container py-5">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-between">
+      <h3 class="m-0 title">Add New Service</h3>
+    </div>
+    <div class="container w-100 py-2">
+        <hr width="50" align="left">
+        <p class="subtitle">Follow steps below to add new one</p>
+    </div>
+    
+    <div class="container">
+
+      <div class="row">
+        <div class="col-3 pr-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Overview</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">1</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <div class="col-3 pr-0 pl-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Description</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">2</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <div class="col-3 pr-0 pl-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Gallery</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">3</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+        <div class="col-3 pl-0">
+            <div class="multistep">
+                <p class="mb-0 pl-5">Publish</p>
+                <div class="part d-flex">
+                  <p class="rounded-circle text-center text-white">4</p>
+                  <hr>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+    </div>
+  </section>
+
+<!-- ------------------------- -->
+
+<div class="container ">
+  <div class="row">
+    <div class="col-lg-12">
+      <label for="formGroupExampleInput">Upload your service photo</label>
+        <div class="form-group col-12 d-table px-0">
+            <div class="imagearea  text-center d-table-cell align-middle">
+                <i class="fa fa-image"></i>
+                <p>UPLOAD</p>
+            </div>
+          </div>
+          <p class="text-muted">If you don’t upload a picture, we’ll choose one for you — but it could take a while. Use 4:3 images (e.g. 800px x 600px) to avoid cropping.</p>
+          <div class="text-right pb-5">
+              <button class="btn mr-3 p-3  bg-light">Cancel</button>
+              <button class="btn p-3" (click)="redirectToAddServs()">Save&Continue</button>
+          </div>
+    </div>
+  </div>
+</div>
