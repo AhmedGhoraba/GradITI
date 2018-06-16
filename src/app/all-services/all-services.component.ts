@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-all-services',
@@ -8,13 +7,9 @@ import { Router } from '@angular/router';
 })
 export class AllServicesComponent implements OnInit {
 
-  constructor(private OurRoute:Router) { }
+  constructor() { }
 
-  //function to redirect links(route)
-  redirectToServDetails():void
-{
-  this.OurRoute.navigateByUrl('/ServiceDetails');
-}
+ 
 
   ngOnInit() {
   }
