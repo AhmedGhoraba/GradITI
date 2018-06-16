@@ -8,13 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class AllServicesComponent implements OnInit {
 
   constructor() { }
-<<<<<<< HEAD
-
- 
-=======
-
-
->>>>>>> 5351d47c454e0250def069840182b6574b2fd3a8
 
   ngOnInit() {
   }
