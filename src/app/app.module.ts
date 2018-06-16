@@ -29,7 +29,6 @@ import { AllRequestsComponent } from './all-requests/all-requests.component';
 import { TopUsersComponent } from './top-users/top-users.component';
 import { MyservicesComponent } from './myservices/myservices.component';
 import { HomeasloginComponent } from './homeaslogin/homeaslogin.component';
-import { AddNewSerComponent } from './add-new-ser/add-new-ser.component';
 import { PostRequestComponent } from './post-request/post-request.component';
 
 //latest components
@@ -87,13 +86,7 @@ const OurRoutes:Routes = [
     TopUsersComponent,
     MyservicesComponent,
     HomeasloginComponent,
-    AddNewSerComponent,
-    PostRequestComponent,
-    MessageComponent,
-    NotificationsComponent,
-    MyRequestsComponent,
-    OneRequestComponent,
-    OneServiceComponent
+    PostRequestComponent
     
   ],
   imports: [
