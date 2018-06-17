@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-my-requests',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyRequestsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private OurRoute:Router) { }
+
+
+  //navigate (routes)
+  redirectToAddReq():void
+  {
+    this.OurRoute.navigateByUrl('/PostRequest');
+  }
 
   ngOnInit() {
   }
