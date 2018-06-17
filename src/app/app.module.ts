@@ -40,7 +40,11 @@ import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 import { SettingComponent } from './setting/setting.component';
 
 //services
+import { HttpClientModule } from '@angular/common/http';
+import { QueryHService } from './query-h.service';
 
+
+//routes
 const OurRoutes:Routes = [
 {path:'' , component: HomeasloginComponent},
 {path:'SignIn' , component: SignInComponent },
@@ -103,9 +107,10 @@ const OurRoutes:Routes = [
     NgbModule.forRoot(),
     RouterModule.forRoot(OurRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [QueryHService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
