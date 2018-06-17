@@ -65,6 +65,10 @@ div > p{
     border-top: 2px solid $main-color ;
 }
 
+.row .col-3:first-of-type  .multistep p{
+    color: $main-color ;
+}
+
 .navigatebtn
 {
     .btn{
