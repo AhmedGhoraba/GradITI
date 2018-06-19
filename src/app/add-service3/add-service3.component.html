@@ -62,18 +62,21 @@
 <div class="container ">
   <div class="row">
     <div class="col-lg-12">
+      <form >
       <label for="formGroupExampleInput">Upload your service photo</label>
         <div class="form-group col-12 d-table px-0">
             <div class="imagearea  text-center d-table-cell align-middle">
-                <i class="fa fa-image"></i>
-                <p>UPLOAD</p>
+                <i class="fa fa-image"></i><br>
+                <input type="file" name="image" id="file" class="inputfile" (change)="onFileSelected($event)">
+                <label for="file">Upload</label>
             </div>
           </div>
           <p class="text-muted">If you don’t upload a picture, we’ll choose one for you — but it could take a while. Use 4:3 images (e.g. 800px x 600px) to avoid cropping.</p>
           <div class="text-right pb-5 navigatebtn">
-              <button class="btn mr-3 p-3 bg-light" (click)="redirectToHome()">Cancel</button>
-              <button class="btn p-3" (click)="redirectToAddServs()">Save & Continue</button>
+              <button class="btn mr-3 p-3 bg-light" type="button" (click)="redirectToHome()">Cancel</button>
+              <button class="btn p-3" type="button" (click)="redirectToAddServs()">Save & Continue</button>
           </div>
+        </form>
     </div>
   </div>
 </div>

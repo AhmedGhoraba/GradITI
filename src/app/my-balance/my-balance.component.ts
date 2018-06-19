@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-my-balance',
   templateUrl: './my-balance.component.html',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class MyBalanceComponent implements OnInit {
 
   constructor() { }
+
+ 
 
   ngOnInit() {
     $(".sharebtn").on('mouseover', function(event){

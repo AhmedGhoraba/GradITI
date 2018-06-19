@@ -62,27 +62,24 @@
 <div class="container">
   <div class="row">
 
-    <form class="col-lg-12">
+    <form class="col-lg-12" name="addservice" #addservice ="ngForm" (ngSubmit)="formpart2(form)">
         <div class="form-group">
           <label for="formGroupExampleInput">Describe your service*</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="I will  ..... "></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="I will  ..... " name="description" [(ngModel)]="form.description" required></textarea>
           <span class="text-muted">Explain your service in detail. Members should know exactly what to expect from your service. (0/20 min)</span>
         </div>
         <div class="form-group py-3">
           <label for="formGroupExampleInput2">Time Duration</label>
           <div class="d-flex">
-            <input type="number"  class="form-control w-25 mr-3" id="exampleFormControlTextarea1" placeholder="Eg.3hour/4month">
+            <input type="number" min="1"  class="form-control w-25 mr-3" id="exampleFormControlTextarea1" placeholder="Eg.3hour/4month" name="duration" [(ngModel)]="form.duration" required>
   
             <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Select Duration
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Hours</a>
-                  <a class="dropdown-item" href="#">Days</a>
-                  <a class="dropdown-item" href="#">Weeks</a>
-                  <a class="dropdown-item" href="#">Months</a>
-                </div>
+                <select class="form-control" aria-labelledby="dropdownMenuButton" name="per" [(ngModel)]="form.per" required>
+                  <option class="dropdown-item"value="Hours">Hours</option>
+                  <option class="dropdown-item" value="Days">Days</option>
+                  <option class="dropdown-item" value="Weeks">Weeks</option>
+                  <option class="dropdown-item" value="Months">Months</option>
+                </select>
               </div>
           </div>
         </div>
@@ -90,17 +87,17 @@
         <div class="form-group py-3">
             <label for="formGroupExampleInput2">Trading preference</label>
             <!-- toggle -->
-            <div class="toggle">
-                <input type="radio" name="sizeBy" value="weight" id="sizeWeight" checked="checked" />
+            <div class="toggle" >
+                <input type="radio" name="DealType" value="Exchange" id="sizeWeight" checked="checked" [(ngModel)]="form.DealType"/>
                 <label for="sizeWeight">Exchange</label>
-                <input type="radio" name="sizeBy" value="dimensions" id="sizeDimensions" />
+                <input type="radio" name="DealType" value="Points" id="sizeDimensions" [(ngModel)]="form.DealType"/>
                 <label for="sizeDimensions">Points</label>
             </div>
           </div>
 
           <div class="text-right pb-5 navigatebtn">
               <button class="btn mr-3 p-3 bg-light" (click)="redirectToHome()">Cancel</button>
-              <button class="btn p-3" (click)="redirectToAddServs()">Save & Continue</button>
+              <button class="btn p-3" [disabled]="!addservice.valid">Save & Continue</button>
           </div>
       </form>
   </div>

@@ -3,6 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap'; //ng bootstrap
 import { RouterModule, Routes } from '@angular/router'; //for routing navigation
+import { FormsModule } from '@angular/forms'; // for add service and requests
+import { HttpClientModule }from '@angular/common/http'; // for get or post requests
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { environment } from '../environments/environment';
+
 
 //huda components
 import { AppComponent } from './app.component';
@@ -40,9 +46,8 @@ import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 import { SettingComponent } from './setting/setting.component';
 
 //services
-import { HttpClientModule } from '@angular/common/http';
 import { QueryHService } from './query-h.service';
-
+import { DatatransferService } from './datatransfer.service';
 
 //routes
 const OurRoutes:Routes = [
@@ -104,13 +109,16 @@ const OurRoutes:Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseconfig),
+    AngularFirestoreModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(OurRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
     HttpClientModule,
   ],
-  providers: [QueryHService],
+  providers: [QueryHService,DatatransferService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
