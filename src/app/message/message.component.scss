@@ -1,0 +1,30 @@
+@import '../SharedStyle';
+
+#sec1
+{
+    margin-top: 138px;
+}
+.title{
+    font-family: $Tilte-font;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid $main-color;
+}
+
+button{
+    @extend %btn-normal;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+.resize{
+    width: 40%;
+    height: 4%;
+}
+

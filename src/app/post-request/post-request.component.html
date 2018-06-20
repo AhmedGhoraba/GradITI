@@ -10,35 +10,35 @@
       </div>
 
       <!-- form -->
-      <form class="col-lg-8">
+      <form class="col-lg-8" name="request" #request="ngForm" (ngSubmit)=sendPost(request.value)>
         <div class="form-group">
           <label for="formGroupExampleInput">Request title*</label>
-          <input type="text" class="form-control " id="formGroupExampleInput" placeholder="E.g. 30-Minute SEO Consult, Virtual Tarot Reading">
+          <input type="text" class="form-control " id="formGroupExampleInput" placeholder="E.g. 30-Minute SEO Consult, Virtual Tarot Reading" name="name" [(ngModel)]="request.name" required>
           <span class="text-muted">Fully describe your post in the title. Limit it to one, single post. (0/35 max)</span>
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">Describe your post*</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="I need ..... "></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="I need ..... " name="description" [ngModel]="request.description" required></textarea>
           <span class="text-muted">Explain your post in detail. Members should know exactly what to expect from your post. (0/20 min)</span>
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput2"><img  src="../../assets/Img/P.png" alt=""> Points willing to give</label>
-            <input type="number" class="form-control">
+            <input type="number" class="form-control" name="price" [(ngModel)]="request.price" required>
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput2"> How many times do you want help with this?</label>
             <!-- toggle -->
             <div class="toggle">
-                <input type="radio" name="sizeBy" value="weight" id="sizeWeight" checked="checked" />
+                <input type="radio" name="question" value="Only Once" id="sizeWeight" checked="checked" [(ngModel)]="request.question"/>
                 <label for="sizeWeight">Only Once</label>
-                <input type="radio" name="sizeBy" value="dimensions" id="sizeDimensions" />
+                <input type="radio" name="question" value="Multible times" id="sizeDimensions" [(ngModel)]="request.question"/>
                 <label for="sizeDimensions">Multible times</label>
             </div>
         </div>
+        <div class="text-center col-12">
+            <hr>
+            <button class="btn px-4 py-3 mt-2" [disabled]="!request.valid">Post Request</button>
+        </div>
     </form>
-    <div class="text-center col-12">
-        <hr>
-        <button class="btn px-4 py-3 mt-2" (click)="redirectToAddReq()">Post Request</button>
-    </div>
     </div>
 </section>

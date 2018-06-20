@@ -20,7 +20,7 @@ export class AddService4Component implements OnInit {
   redirectToMyServs():void
   {
 
-    this.http.post('http://172.16.5.193:8080/user/addService',this.form).subscribe(res=>{
+    this.http.post('https://giveand.herokuapp.com/user/addService',this.form).subscribe(res=>{
       console.log(res)
     });
     this.OurRoute.navigateByUrl('/Myservices');
